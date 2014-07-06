@@ -3,17 +3,12 @@
  
     var start=function(){
         var content=$('#content');
-        //var index;
-
-        //for (index=0; index<response.posts.length;++index){
-        //   content.html(response.posts[index].subject);
-        //}
         var posts=response.posts; //array
         var html ='';
         posts.forEach(function(post){
-            html+= '<h2>';
+            html+= '<div class="alert-info">';
             html+= post.subject;
-            html+= '</h2>';
+            html+= '</div>';
         });
         content.html(html);
     };
